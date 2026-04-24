@@ -1,8 +1,9 @@
 const InputNameTask = document.querySelector("#addTaskNameInput");
-const InputDetailTask = document.querySelector("#addTaskDetailsImput");
+const InputDetailTask = document.querySelector("#addTaskDetailsInput");
 const CreateBtn = document.querySelector("#createbtn");
 const TaskListEl = document.querySelector(".tasklist");
 const SearchBtn = document.querySelector("#Searchbtn");
+const searchInput = document.querySelector("#searchInput");
 
 //#region form of new Task
 //anty hack
@@ -26,7 +27,7 @@ const createTaskCard = (title, details) => {
   const escapedTitle = escapeHtml(title);
   const escapedDetails = escapeHtml(details);
   return `
-        <div class="card bg-dark  text-white text-start taskcard mb-3" data-task-id="${Date.now() + Math.random()}">
+        <div class="card bg-dark text-white text-start taskcard mb-3" data-task-id="${Date.now() + Math.random()}">
           <div class="card-header d-flex gap-3">
             <a href="#" class="task-complete-btn text-decoration-none text-white"><i class="fa fa-check"></i></a>
             <a href="#" class="task-uncomplete-btn text-decoration-none  text-white"><i class="fa fa-times"></i></a>
@@ -104,7 +105,29 @@ const handleTaskListClick = (event) => {
 
 //#region search part
 const searchintasks = () => {
-  alert("i didnt do anything about yet :) please wait a bit more!");
+  const searchText = searchInput.value.toLowerCase();
+  let hasresault = false;
+  document.querySelectorAll(".taskcard").forEach((task) => {
+    const taskItem = task.textContent;
+    if (taskItem.toLocaleLowerCase().indexOf(searchText) != -1) {
+      task.classList.remove("d-none");
+      task.classList.add("d-flex");
+      hasresault = true;
+    } else {
+      task.classList.remove("d-flex");
+      task.classList.add("d-none");
+    }
+  });
+
+  const noResultEl = document.querySelector(".noresult");
+
+  if (!hasresault) {
+    noResultEl.classList.remove("d-none");
+    noResultEl.classList.add("d-flex");
+  } else {
+    noResultEl.classList.remove("d-flex");
+    noResultEl.classList.add("d-none");
+  }
 };
 //#endregion
 

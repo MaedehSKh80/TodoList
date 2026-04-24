@@ -17,3 +17,10 @@ body {
 #taskComplete {
   border: none;
 }
+.taskcard {
+  transition: all 0.3s ease;
+}
+
+.taskcard.d-none {
+  display: none !important;
+}

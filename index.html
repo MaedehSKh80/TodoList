@@ -30,7 +30,7 @@
         <div class="col-12 col-md-6 col-lg-6">
           <form class="inputform card bg-dark text-bg-dark text-start">
             <div class="card-body">
-              <!-- imput name of the task  -->
+              <!-- input name of the task  -->
               <div class="mb-3">
                 <input
                   type="text"
@@ -41,12 +41,12 @@
                   placeholder="Input your task name here!"
                 />
               </div>
-              <!-- imput details of the task  -->
+              <!-- input details of the task  -->
               <div class="mb-3">
                 <textarea
                   class="form-control"
                   name=""
-                  id="addTaskDetailsImput"
+                  id="addTaskDetailsInput"
                   placeholder="You can add details for your task here!"
                   rows="5"
                 ></textarea>
@@ -69,6 +69,7 @@
               class="form-control"
               placeholder="you can search your task here!"
               aria-label="Button"
+              id="searchInput"
             />
             <button class="btn btn-secondary" type="button" id="Searchbtn">
               <i class="fa fa-search"></i>
@@ -78,6 +79,13 @@
           <!-- task list all tasks  -->
           <div class="tasklist">
             <!-- tasks are here  -->
+
+            <p class=" noresult fw-semibold text-muted text-center d-none">
+              No result! 👎 <br />
+              <span class="fw-light">
+                for checking all tasks again, click the empty search button
+              </span>
+            </p>
           </div>
         </div>
       </div>
