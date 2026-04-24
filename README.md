@@ -4,8 +4,13 @@ A clean, interactive task management web app built with **HTML5**, **CSS3**, **B
 This project demonstrates my ability to build a fully client-side task organizer with modular code, security awareness, and planned scalability.
 
 🔗 **Live Demo:** [GitHub Pages Link — Coming Soon](#)
-![Todo List Screenshot](./assets/img/ToDoList.png)
 
+
+## 📸 Screenshot
+
+![Todo List App](./assets/Img/ToDoList.png)
+
+*Main interface — task creation, search, and status management*
 ---
 
 ## 🚀 Current Features
