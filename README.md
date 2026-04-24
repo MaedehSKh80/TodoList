@@ -1,11 +1,10 @@
-
-
 # ✅ Todo List — Task Manager with Local Storage (Coming Soon)
 
 A clean, interactive task management web app built with **HTML5**, **CSS3**, **Bootstrap**, and **vanilla JavaScript**.  
 This project demonstrates my ability to build a fully client-side task organizer with modular code, security awareness, and planned scalability.
 
 🔗 **Live Demo:** [GitHub Pages Link — Coming Soon](#)
+![Todo List Screenshot](./assets/img/ToDoList.png)
 
 ---
 
@@ -26,17 +25,17 @@ This project demonstrates my ability to build a fully client-side task organizer
 
 ## 🔮 Planned Improvements (Roadmap)
 
-| Feature | Status |
-|--------|--------|
-| **Local Storage** persistence (tasks survive page refresh) | 🟡 Planned |
-| **Task counter** (total tasks + completed tasks) | 🟡 Planned |
-| **Live search** — filter as you type (no button required) | 🟡 Planned |
-| **Search result counter** (e.g., "3 of 12 tasks found") | 🟡 Planned |
-| **Clear search button** (reset search with one click) | 🟡 Planned |
-| **Rewrite Reset button** from HTML to JavaScript for better control | 🟡 Planned |
-| **Improve edit security** — replace `prompt()` with modal form & validation | 🟡 Planned |
-| **Clear all tasks** button (with confirmation) | 🟡 Planned |
-| Due dates, priority flags, drag & drop sorting | 🔜 Future consideration |
+| Feature                                                                     | Status                  |
+| --------------------------------------------------------------------------- | ----------------------- |
+| **Local Storage** persistence (tasks survive page refresh)                  | 🟡 Planned              |
+| **Task counter** (total tasks + completed tasks)                            | 🟡 Planned              |
+| **Live search** — filter as you type (no button required)                   | 🟡 Planned              |
+| **Search result counter** (e.g., "3 of 12 tasks found")                     | 🟡 Planned              |
+| **Clear search button** (reset search with one click)                       | 🟡 Planned              |
+| **Rewrite Reset button** from HTML to JavaScript for better control         | 🟡 Planned              |
+| **Improve edit security** — replace `prompt()` with modal form & validation | 🟡 Planned              |
+| **Clear all tasks** button (with confirmation)                              | 🟡 Planned              |
+| Due dates, priority flags, drag & drop sorting                              | 🔜 Future consideration |
 
 ---
 
@@ -53,14 +52,14 @@ This project demonstrates my ability to build a fully client-side task organizer
 
 ### ⚠️ Challenges & areas to improve:
 
-| Challenge | How I plan to improve |
-|-----------|------------------------|
+| Challenge                                              | How I plan to improve                         |
+| ------------------------------------------------------ | --------------------------------------------- |
 | `prompt()` for editing is insecure and user-unfriendly | Replace with a modal (Bootstrap) + validation |
-| No data persistence | Add Local Storage (CRUD sync) |
-| Search requires a button click | Upgrade to live `input` event |
-| No visual feedback on task count | Add counter badge & progress indicator |
-| Reset button is pure HTML, not controlled by JS | Move fully into JS for consistent behavior |
-| No "Clear All Tasks" function | Add dedicated button with confirmation |
+| No data persistence                                    | Add Local Storage (CRUD sync)                 |
+| Search requires a button click                         | Upgrade to live `input` event                 |
+| No visual feedback on task count                       | Add counter badge & progress indicator        |
+| Reset button is pure HTML, not controlled by JS        | Move fully into JS for consistent behavior    |
+| No "Clear All Tasks" function                          | Add dedicated button with confirmation        |
 
 ---
 
